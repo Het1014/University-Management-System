@@ -263,7 +263,6 @@ public class Login extends javax.swing.JFrame {
            Class.forName("com.mysql.cj.jdbc.Driver");
            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
            Statement st = con.createStatement();
-           PreparedStatement ps;
            String p;
             if(usrid.equals("") || pwd.equals(""))
                JOptionPane.showMessageDialog(this, "Please fill out the field(s)");
